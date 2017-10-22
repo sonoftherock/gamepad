@@ -177,10 +177,10 @@
           var socket = io();
             var obj = document.getElementById('up');
             obj.addEventListener('touchstart', function(event) {
-              socket.emit('controller-two-key', {'key': 'a-down'});
+              socket.emit('controller-four-key', {'key': 'u-down'});
             })
             obj.addEventListener('touchend', function(event) {
-              socket.emit('controller-two-key', {'key': 'a-up'});
+              socket.emit('controller-four-key', {'key': 'u-up'});
             }, false);
         });
       </script>
@@ -190,10 +190,10 @@
           var socket = io();
             var obj = document.getElementById('down');
             obj.addEventListener('touchstart', function(event) {
-              socket.emit('controller-two-key', {'key': 's-down'});
+              socket.emit('controller-four-key', {'key': 'i-down'});
             })
             obj.addEventListener('touchend', function(event) {
-              socket.emit('controller-two-key', {'key': 's-up'});
+              socket.emit('controller-four-key', {'key': 'i-up'});
             }, false);
         });
       </script>
@@ -203,11 +203,11 @@
           var socket = io();
             var obj = document.getElementById('right');
             obj.addEventListener('touchstart', function(event) {
-              socket.emit('controller-two-key', {'key': 'd-down'});
+              socket.emit('controller-four-key', {'key': 'o-down'});
 
             })
             obj.addEventListener('touchend', function(event) {
-              socket.emit('controller-two-key', {'key': 'd-up'});
+              socket.emit('controller-four-key', {'key': 'o-up'});
             }, false);
         });
       </script>
@@ -217,10 +217,10 @@
           var socket = io();
             var obj = document.getElementById('left');
             obj.addEventListener('touchstart', function(event) {
-              socket.emit('controller-two-key', {'key': 'f-down'});
+              socket.emit('controller-four-key', {'key': 'p-down'});
             })
             obj.addEventListener('touchend', function(event) {
-              socket.emit('controller-two-key', {'key': 'f-up'});
+              socket.emit('controller-four-key', {'key': 'p-up'});
             }, false);
         });
       </script>
@@ -249,10 +249,10 @@
         var socket = io();
           var obj = document.getElementById('g');
           obj.addEventListener('touchstart', function(event) {
-            socket.emit('controller-two-key', {'key': 'g-down'});
+            socket.emit('controller-four-key', {'key': 'j-down'});
           })
           obj.addEventListener('touchend', function(event) {
-            socket.emit('controller-two-key', {'key': 'g-up'});
+            socket.emit('controller-four-key', {'key': 'j-up'});
           })
       });
     </script>
@@ -262,10 +262,10 @@
         var socket = io();
           var obj = document.getElementById('h');
           obj.addEventListener('touchstart', function(event) {
-            socket.emit('controller-two-key', {'key': 'h-down'});
+            socket.emit('controller-four-key', {'key': 'k-down'});
           })
           obj.addEventListener('touchend', function(event) {
-            socket.emit('controller-two-key', {'key': 'h-up'});
+            socket.emit('controller-four-key', {'key': 'k-up'});
           })
       });
     </script>
@@ -275,10 +275,10 @@
         var socket = io();
           var obj = document.getElementById('c');
           obj.addEventListener('touchstart', function(event) {
-            socket.emit('controller-two-key', {'key': 'c-down'});
+            socket.emit('controller-four-key', {'key': 'l-down'});
           })
           obj.addEventListener('touchend', function(event) {
-            socket.emit('controller-two-key', {'key': 'c-up'});
+            socket.emit('controller-four-key', {'key': 'l-up'});
           })
       });
     </script>
@@ -288,10 +288,10 @@
         var socket = io();
           var obj = document.getElementById('v');
           obj.addEventListener('touchstart', function(event) {
-            socket.emit('controller-two-key', {'key': 'v-down'});
+            socket.emit('controller-four-key', {'key': 'm-down'});
           })
           obj.addEventListener('touchend', function(event) {
-            socket.emit('controller-two-key', {'key': 'v-up'});
+            socket.emit('controller-four-key', {'key': 'm-up'});
           })
       });
     </script>

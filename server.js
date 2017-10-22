@@ -57,7 +57,15 @@ app.post('/player_two', function(req, res) {
 	console.log('player two added');
 });
 
+app.post('/player_three', function(req, res) {
+	res.render('controller_three.ejs');
+	console.log('player three added');
+});
 
+app.post('/player_four', function(req, res) {
+	res.render('controller_four.ejs');
+	console.log('player four added');
+});
 // app.post('/player', function(req, res) {
 //   var player_id = req.body.player;
 //   console.log(player_id);
@@ -85,6 +93,16 @@ io.on('connection', function(socket) {
     console.log('received message from webpage: ' + msg.key);
     io.emit('key', msg);
   });
+
+	socket.on('controller-three-key', function(msg) {
+    console.log('received message from webpage: ' + msg.key);
+    io.emit('key', msg);
+  });
+
+	socket.on('controller-four-key', function(msg) {
+		console.log('received message from webpage: ' + msg.key);
+		io.emit('key', msg);
+	});
 
 	socket.on('disconnect', function(){
 		console.log('user disconnected');

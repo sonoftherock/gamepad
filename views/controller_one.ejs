@@ -177,10 +177,10 @@
           var socket = io();
             var obj = document.getElementById('up');
             obj.addEventListener('touchstart', function(event) {
-              socket.emit('controller-one-key', {'key': 'q'});
+              socket.emit('controller-one-key', {'key': 'q-down'});
             })
             obj.addEventListener('touchend', function(event) {
-              socket.emit('controller-one-key', {'key': 'q-stop'});
+              socket.emit('controller-one-key', {'key': 'q-up'});
             }, false);
         });
       </script>
@@ -190,10 +190,10 @@
           var socket = io();
             var obj = document.getElementById('down');
             obj.addEventListener('touchstart', function(event) {
-              socket.emit('controller-one-key', {'key': 'w'});
+              socket.emit('controller-one-key', {'key': 'w-down'});
             })
             obj.addEventListener('touchend', function(event) {
-              socket.emit('controller-one-key', {'key': 'w-stop'});
+              socket.emit('controller-one-key', {'key': 'w-up'});
             }, false);
         });
       </script>
@@ -203,11 +203,11 @@
           var socket = io();
             var obj = document.getElementById('right');
             obj.addEventListener('touchstart', function(event) {
-              socket.emit('controller-one-key', {'key': 'e'});
+              socket.emit('controller-one-key', {'key': 'e-down'});
 
             })
             obj.addEventListener('touchend', function(event) {
-              socket.emit('controller-one-key', {'key': 'e-stop'});
+              socket.emit('controller-one-key', {'key': 'e-up'});
             }, false);
         });
       </script>
@@ -217,10 +217,10 @@
           var socket = io();
             var obj = document.getElementById('left');
             obj.addEventListener('touchstart', function(event) {
-              socket.emit('controller-one-key', {'key': 'r'});
+              socket.emit('controller-one-key', {'key': 'r-down'});
             })
             obj.addEventListener('touchend', function(event) {
-              socket.emit('controller-one-key', {'key': 'r-stop'});
+              socket.emit('controller-one-key', {'key': 'r-up'});
             }, false);
         });
       </script>
@@ -249,7 +249,10 @@
         var socket = io();
           var obj = document.getElementById('t');
           obj.addEventListener('touchstart', function(event) {
-            socket.emit('controller-one-key', {'key': 't'});
+            socket.emit('controller-one-key', {'key': 't-down'});
+          })
+          obj.addEventListener('touchend', function(event) {
+            socket.emit('controller-one-key', {'key': 't-up'});
           })
       });
     </script>
@@ -259,7 +262,10 @@
         var socket = io();
           var obj = document.getElementById('y');
           obj.addEventListener('touchstart', function(event) {
-            socket.emit('controller-one-key', {'key': 'y'});
+            socket.emit('controller-one-key', {'key': 'y-down'});
+          })
+          obj.addEventListener('touchend', function(event) {
+            socket.emit('controller-one-key', {'key': 'y-up'});
           })
       });
     </script>
@@ -269,7 +275,10 @@
         var socket = io();
           var obj = document.getElementById('x');
           obj.addEventListener('touchstart', function(event) {
-            socket.emit('controller-one-key', {'key': 'x'});
+            socket.emit('controller-one-key', {'key': 'x-down'});
+          })
+          obj.addEventListener('touchend', function(event) {
+            socket.emit('controller-one-key', {'key': 'x-up'});
           })
       });
     </script>
@@ -279,7 +288,10 @@
         var socket = io();
           var obj = document.getElementById('z');
           obj.addEventListener('touchstart', function(event) {
-            socket.emit('controller-one-key', {'key': 'z'});
+            socket.emit('controller-one-key', {'key': 'z-down'});
+          })
+          obj.addEventListener('touchend', function(event) {
+            socket.emit('controller-one-key', {'key': 'z-up'});
           })
       });
     </script>
